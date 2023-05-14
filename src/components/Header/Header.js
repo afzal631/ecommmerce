@@ -22,8 +22,11 @@ const navigations = [
 function Header() {
   return (
     <div>
-      <header class="bg-white  dark:bg-gray-900">
-        <nav class="bg-white mx-auto lg:w-5/6 md:w-5/6 dark:bg-gray-900 sm:w-auto ">
+      <header class="bg-white  " style={{ backgroundColor: "black" }}>
+        <nav
+          class="bg-white mx-auto lg:w-5/6 md:w-5/6 sm:w-auto "
+          style={{ backgroundColor: "black" }}
+        >
           <div class="container flex flex-col items-center p-6 mx-auto">
             <a
               href="/"
@@ -31,7 +34,10 @@ function Header() {
             >
               <span className="ml-3 text-xl">ecommerce</span>
             </a>
-            <div class="flex items-center justify-center mt-6 text-gray-600 capitalize dark:text-gray-300">
+            <div
+              class="flex items-center justify-center mt-6 text-gray-600 capitalize dark:text-gray-300"
+              style={{ backgroundColor: "black" }}
+            >
               {navigations.map((navigations) => (
                 <a
                   href={navigations.path}
