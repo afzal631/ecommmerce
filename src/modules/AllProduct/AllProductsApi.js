@@ -16,7 +16,7 @@ function AllproductsApi({ products = [] }) {
         <div className="grid mx-auto grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-3 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 lg:w-5/6 md:w-5/6">
           {products.map((product) => {
             return (
-              <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg h-4/4 duration-200 hover:scale-105">
+              <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg h-4/4 duration-200 hover:scale-105 mx-auto">
                 <div className="min-h-40 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md p-2 lg:aspect-none group-hover:opacity-75 lg:h-44">
                   <img
                     src={product.image}
