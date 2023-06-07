@@ -14,7 +14,6 @@ function AllProduct() {
     };
     fetchProducts();
   }, []);
-
   return (
     <div>
       <Categories />

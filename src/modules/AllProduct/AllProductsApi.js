@@ -18,6 +18,7 @@ function AllproductsApi({ products = [] }) {
             return (
               <div
                 className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg h-4/4 duration-200 hover:scale-105 mx-auto"
+                key={product?.id}
                 style={{ width: "95%" }}
               >
                 <div className="min-h-40 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md p-2 lg:aspect-none group-hover:opacity-75 lg:h-44">

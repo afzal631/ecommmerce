@@ -1,7 +1,7 @@
 import React from "react";
 
 function FeatureCard({ Categories = [] }) {
-  console.log(Categories);
+
   return (
     <section className="text-gray-600 body-font ">
       <div className="container px-5 py-24 mx-auto">
@@ -16,7 +16,7 @@ function FeatureCard({ Categories = [] }) {
         <div className="flex flex-wrap -m-4">
           {Categories.map((cat) => {
             return (
-              <div className=" md:w-1/3 px-14 py-3 ">
+              <div className=" md:w-1/3 px-14 py-3 " key={cat?.id}>
                 <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col duration-200  hover:scale-110">
                   <div className="flex items-center mb-3">
                     <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">

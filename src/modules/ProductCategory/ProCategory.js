@@ -18,7 +18,7 @@ function ProCategory() {
     };
     fetchProducts();
   }, []);
-  console.log(ProCat);
+
   return (
     <div>
       <AllproductsApi products={ProCat} />

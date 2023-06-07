@@ -24,7 +24,6 @@ function Home() {
         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl justify-center flex animate-bounce duration-2000ms">
           Products
         </h1>
-
         <p className="text-1xl  tracking-tight text-gray-900  justify-center flex">
           See our trending products
         </p>
