@@ -17,19 +17,20 @@ function AllproductsApi({ products = [] }) {
           {products.map((product) => {
             return (
               <div
-                className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg h-4/4 duration-200 hover:scale-105 mx-auto"
+                className="max-w-xs overflow-hidden bg-white border border-gray-300 hover:shadow-[5px_5px_black] hover:scale-105 rounded-lg h-4/4 duration-200 mx-auto "
                 key={product?.id}
                 style={{ width: "95%" }}
               >
-                <div className="min-h-40 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md p-2 lg:aspect-none group-hover:opacity-75 lg:h-44">
+                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md p-2 lg:aspect-none group-hover:opacity-75 lg:h-44 sm:h-44 duration-200  hover:scale-90">
                   <img
                     src={product.image}
                     alt="Front of men&#039;s Basic Tee in black."
-                    className="h-full w-full object-contain object-center lg:h-full lg:w-full"
+                    className="h-full w-full object-contain object-center lg:h-full max-h-[13rem] lg:w-full "
                   />
                 </div>
+                {/* <div className=" hover:bg-blue-400 hover:text-white"> */}
                 <div
-                  className="mt-4 flex justify-between hover:bg-gray-200  "
+                  className="mt-4 flex justify-between hover:bg-gray-200   "
                   style={{ padding: "0rem 1rem 1rem" }}
                 >
                   <div>
@@ -42,26 +43,28 @@ function AllproductsApi({ products = [] }) {
                   </p>
                 </div>
                 <div className="" style={{ padding: "0rem 1rem 1rem" }}>
+                  <h3
+                    className=" text-gray-700 text-sm font-bold "
+                    style={{ marginBottom: "10px" }}
+                  >
+                    {/* <span
+                        aria-hidden="true"
+                        className="absolute inset-0"
+                      ></span> */}
+                    {product.title.substring(0, 22) + "..."}
+                  </h3>
                   <Link to={`/products/${product.id}`}>
                     <button
-                      className="bg-green-600 w-full hover:bg-green-500"
+                      className="bg-black w-full hover:bg-slate-900"
                       style={{
                         padding: "0.2rem 1rem",
                         borderRadius: "0.2rem",
                         color: "white",
-                        marginBottom: "7px",
                       }}
                     >
                       buy now
                     </button>
                   </Link>
-                  <h3 className=" text-gray-700 text-sm font-bold">
-                    {/* <span
-                      aria-hidden="true"
-                      className="absolute inset-0"
-                    ></span> */}
-                    {product.title}
-                  </h3>
                 </div>
                 {/* </Link> */}
                 {/* <button>add to cart</button> */}

@@ -24,20 +24,20 @@ const navigations = [
 function Header() {
   return (
     <div>
-      <header className="bg-white  " style={{ backgroundColor: "black" }}>
+      <header className="text-white" style={{ backgroundColor: "black" }}>
         <nav
-          className="bg-white mx-auto lg:w-5/6 md:w-5/6 sm:w-auto "
+          className="text-white mx-auto lg:w-5/6 md:w-5/6 sm:w-auto "
           style={{ backgroundColor: "black" }}
         >
           <div className="container flex flex-col items-center p-6 mx-auto">
             <a
               href="/"
-              className="flex cursor-pointer title-font font-medium items-center mb-4 md:mb-0  dark:text-gray-300"
+              className="flex cursor-pointer title-font font-medium items-center mb-4 md:mb-0 text-white"
             >
               <span className="ml-3 text-xl">ecommerce</span>
             </a>
             <div
-              className="flex items-center justify-center mt-6 text-gray-600 capitalize dark:text-gray-300"
+              className="flex items-center justify-center mt-6  capitalize text-white"
               style={{ backgroundColor: "black" }}
             >
               {navigations.map((navigations) => (

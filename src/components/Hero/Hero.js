@@ -1,6 +1,4 @@
 import React from "react";
-// import image from "../Hero/hero1.jpg";
-// import image2 from "../Hero/hero2.jpg";
 import image from "../Hero/herooo.png";
 import { Link } from "react-router-dom";
 
@@ -11,7 +9,7 @@ function Hero() {
         <div className="container mx-auto lg:w-5/6 md:w-5/6 sm:w-2/2 flex flex-col px-6 py-4 space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
           <div className="flex flex-col items-center w-full lg:flex-row lg:w-1/2">
             <div className="max-w-lg lg:mx-12 lg:order-2">
-              <h1 className="text-3xl font-semibold tracking-wide text-gray-800 dark:text-white lg:text-4xl">
+              <h1 className="text-3xl font-semibold tracking-wide text-white  lg:text-4xl">
                 The best products
               </h1>
               <p className="mt-4 text-gray-600 dark:text-gray-300">

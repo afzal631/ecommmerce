@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Rating from '@mui/material/Rating';
 
 function Product() {
@@ -23,7 +23,7 @@ function Product() {
   const handlecart = (pro, redirect) => {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     const isProductExist = cart.findIndex((item) => item.id === pro.id);
-    if (isProductExist != -1) {
+    if (isProductExist !== -1) {
       cart[isProductExist].quantity += 1;
       localStorage.setItem("cart", JSON.stringify(cart));
 
