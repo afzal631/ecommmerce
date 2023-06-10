@@ -36,16 +36,16 @@ function FeatureCard({ Categories = [] }) {
           </h2>
         </div>
         <div className=" flex justify-center" style={{ alignItems: "center" }}>
-          <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-0 -m-3 ">
+          <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-4 md:grid-cols-2   ">
             {Categories.map((cat) => {
               return (
-                <Link
-                  href={`/Categories/${cat}`}
-                  className="mt-3 text-indigo-500  text-center hover:scale-105 gap-0"
-                >
-                  <div className=" md:w-3/3 px-6 " key={cat?.id}>
+                <div className=" md:w-3/3 px-6 hover:scale-105 " key={cat?.id}>
+                  <Link
+                    to={`/Categories/${cat}`}
+                    className="mt-3 text-indigo-500  text-center  gap-0 bg-transparent outline-none select-none"
+                  >
                     <div
-                      className="flex rounded-lg   bg-teel-200 p-8 flex-col duration-200 hover:shadow-[5px_6px_black] h-40 w-64 justify-center"
+                      className="flex rounded-lg   bg-teel-200 p-8 flex-col duration-200 lg:hover:shadow-[5px_6px_black] shadow-[5px_6px_black] h-40 w-64 justify-center"
                       style={{
                         // background: "rgb(138 205 255)",
                         border: "3px solid black",
@@ -57,8 +57,8 @@ function FeatureCard({ Categories = [] }) {
                         </h2>
                       </div>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               );
             })}
           </div>
