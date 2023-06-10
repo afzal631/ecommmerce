@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 function FeatureCard({ Categories = [] }) {
@@ -38,7 +39,7 @@ function FeatureCard({ Categories = [] }) {
           <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-0 -m-3 ">
             {Categories.map((cat) => {
               return (
-                <a
+                <Link
                   href={`/Categories/${cat}`}
                   className="mt-3 text-indigo-500  text-center hover:scale-105 gap-0"
                 >
