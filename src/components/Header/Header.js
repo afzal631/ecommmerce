@@ -43,10 +43,10 @@ function Header() {
               {navigations.map((navigations) => (
                 <a
                   href={navigations.path}
-                  className="mx-2 text-gray-800 border-b-2 border-blue-500 dark:text-gray-200 sm:mx-6"
+                  className="mx-2 text-white marker:border-b-2 border-blue-500 dark:text-gray-200 sm:mx-6"
                   key={navigations?.name}
                 >
-                  {navigations.name}
+                  {navigations?.name}
                 </a>
               ))}
               <Link to="/cart">

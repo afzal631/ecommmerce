@@ -12,7 +12,7 @@ function Hero() {
               <h1 className="text-3xl font-semibold tracking-wide text-white  lg:text-4xl">
                 The best products
               </h1>
-              <p className="mt-4 text-gray-600 dark:text-gray-300">
+              <p className="mt-4 text-white">
                 Welcome to our ecommerce website! Discover our unique collection
                 of electronic, jewelry and trendy clothing to elevate your
                 style. Enjoy seamless shopping with quick delivery and excellent
@@ -21,7 +21,7 @@ function Hero() {
               <div className="mt-6">
                 <Link
                   to={`/products`}
-                  className="px-6 py-2.5 mt-6 text-sm font-medium leading-5 text-center text-white capitalize bg-blue-600 rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"
+                  className="px-6 py-2.5 mt-6 text-sm font-medium leading-5 text-center text-white capitalize bg-blue-400 rounded-lg hover:bg-blue-300 lg:mx-0 lg:w-auto focus:outline-none"
                 >
                   Lets Shop...
                 </Link>
