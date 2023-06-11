@@ -29,7 +29,7 @@ function Header() {
           className="text-white mx-auto lg:w-5/6 md:w-5/6 sm:w-auto "
           style={{ backgroundColor: "black" }}
         >
-          <div className="container flex flex-col items-center p-6 mx-auto">
+          <div className="flex flex-col items-center p-6 mx-auto">
             <a
               href="/"
               className="flex cursor-pointer title-font font-medium items-center mb-4 md:mb-0 text-white"
