@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AllProductsApi from "./AllProductsApi";
-import Categories from "../../components/FeatureCard/Categories";
+// import Categories from "../../components/FeatureCard/Categories";
 import Loading from "../../components/Product/Loading";
 
 function AllProduct() {
@@ -16,7 +16,7 @@ function AllProduct() {
   }, []);
   return (
     <div>
-      <Categories />
+      {/* <Categories /> */}
       {Allproducts.length > 0 ? (
         <AllProductsApi products={Allproducts} />
       ) : (
