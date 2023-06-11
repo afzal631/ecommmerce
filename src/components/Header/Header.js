@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import cartImg from "./cart.png";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+
 // import { Link } from "react-router-dom";
 
 const navigations = [
@@ -34,7 +36,7 @@ function Header() {
               href="/"
               className="flex cursor-pointer title-font font-medium items-center mb-4 md:mb-0 text-white"
             >
-              <span className="ml-3 text-xl">ecommerce</span>
+              <span className="ml-3 text-xl">EcomExpress</span>
             </a>
             <div
               className="flex items-center justify-center mt-6  capitalize text-white"
@@ -50,7 +52,10 @@ function Header() {
                 </a>
               ))}
               <Link to="/cart">
-                <img className="w-[3rem]" src={cartImg} alt="cart" />
+                {/* <img className="w-[3rem]" src={cartImg} alt="cart" /> */}
+                <div className="w-[3rem]">
+                  <AiOutlineShoppingCart size={25} />
+                </div>
               </Link>
             </div>
           </div>

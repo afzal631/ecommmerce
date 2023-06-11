@@ -12,7 +12,7 @@ function AllproductsApi({ products = [] }) {
           Choose you're product.
         </p>
       </div>
-      <div className="container px-6 py-10 mx-auto  ">
+      <div className=" py-10 mx-auto  ">
         <div className="grid mx-auto grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-3 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 lg:w-5/6 md:w-5/6">
           {products.map((product) => {
             return (

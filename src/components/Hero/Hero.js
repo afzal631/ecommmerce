@@ -13,7 +13,7 @@ function Hero() {
                 The best products
               </h1>
               <p className="mt-4 text-white">
-                Welcome to our ecommerce website! Discover our unique collection
+                Welcome to EcomExpress website! Discover our unique collection
                 of electronic, jewelry and trendy clothing to elevate your
                 style. Enjoy seamless shopping with quick delivery and excellent
                 customer service. Start shopping now!
