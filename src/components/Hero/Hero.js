@@ -1,13 +1,13 @@
 import React from "react";
-import image from "../Hero/herooo.png";
+import image from "./banners2.svg";
 import { Link } from "react-router-dom";
 
 function Hero() {
   return (
     <div>
       <section className="bg-white " style={{ backgroundColor: "black" }}>
-        <div className=" mx-auto lg:mx-auto lg:w-5/6 md:w-5/6 sm:w-2/2 flex flex-col-reverse xs:mx-5 px-6 py-4 xs:p-0 xs:m-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
-          <div className="flex flex-col items-center w-full lg:flex-row lg:w-1/2">
+        <div className=" mx-auto lg:mx-auto lg:w-5/6 md:w-5/6 sm:w-2/2   flex flex-col-reverse xs:px-5 px-6 py-4 xs:p-0 xs:m-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
+          <div className="flex flex-col items-center w-full lg:flex-row lg:w-1/2 ">
             <div className="max-w-lg lg:mx-12 xs:mb-[5rem] lg:order-2">
               <h1 className="text-3xl font-semibold tracking-wide text-white  lg:text-4xl">
                 The best products

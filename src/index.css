@@ -18,8 +18,9 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-
-
+.bg-svg-background {
+  background-image: url('./banner.svg');
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
