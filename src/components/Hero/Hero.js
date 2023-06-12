@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div>
       <section
-        className="bg-white h-screen "
+        className="bg-white h-[85vh] "
         style={{ backgroundColor: "black" }}
       >
         <div className=" mx-auto lg:mx-auto lg:w-5/6 md:w-5/6 sm:w-2/2 flex flex-col-reverse xs:px-5 px-6 py-4 xs:p-0 xs:m-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
